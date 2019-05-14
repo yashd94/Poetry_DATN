@@ -2,13 +2,13 @@ import modules.text_processing
 import torch
 import torch.nn.functional as F
 from imp import reload
-import modules.models
-reload(modules.models)
-from modules.text_processing import read_split_file_lyrics, BatchWrapper, generate_iterators_lyrics
-from modules.functions import *
+import models
+reload(models)
+from text_processing import read_split_file_lyrics, BatchWrapper, generate_iterators_lyrics
+from functions import *
 import numpy as np
 import pandas as pd
-from modules.models import BiLSTMSourceNet
+from models import BiLSTMSourceNet
 
 print("Reading in the cleaned lyrics data.")
 
