@@ -13,7 +13,7 @@ from models import BiLSTMSourceNet
 print("Reading in the cleaned lyrics data.")
 
 #Read and split data
-train_path, val_path = read_split_file_lyrics("Data/lyrics_cleaned.csv","")
+train_path, val_path = read_split_file_lyrics("lyrics_cleaned.csv","")
 
 print("Creating iterators.")
 #Create iterators
